@@ -32,13 +32,13 @@ Only one valid answer exists.
  
 
 */
-
 import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numToIndex = new HashMap<>();
+
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (numToIndex.containsKey(complement)) {
@@ -46,8 +46,10 @@ class Solution {
             }
             numToIndex.put(nums[i], i);
         }
-        // No need to throw an exception here, as the problem guarantees a solution.
-        // If no solution is found, return an empty array or null.
-        return new int[0];
+
+        // Since the problem guarantees a solution, we can return an empty array 
+        // or null if no solution exists (up to your preference)
+        return new int[0];  // Return an empty array
     }
 }
+
