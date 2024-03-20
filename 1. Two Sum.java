@@ -47,9 +47,8 @@ class Solution {
             numToIndex.put(nums[i], i);
         }
 
-        // Since the problem guarantees a solution, we can return an empty array 
-        // or null if no solution exists (up to your preference)
-        return new int[0];  // Return an empty array
+        // Since the problem guarantees a solution, [it won't] turn an empty array
+        return new int[0];  // Return an empty arra
     }
 }
 
